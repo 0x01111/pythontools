@@ -5,6 +5,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding("utf8")
 
+# 中文英文句子分开
 def translate(str):
     line = str.strip().decode('utf-8', 'ignore')  # 处理前进行相关的处理，包括转换成Unicode等
     p2 = re.compile(ur'[^\u4e00-\u9fa5]')  # 中文的编码范围是：\u4e00到\u9fa5
